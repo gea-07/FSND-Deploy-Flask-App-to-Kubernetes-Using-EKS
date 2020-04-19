@@ -3,4 +3,4 @@ flask
 gunicorn
 pytest
 typing
-MatMult
+MatMul
