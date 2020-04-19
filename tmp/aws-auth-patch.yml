@@ -8,6 +8,12 @@ data:
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
     []
+    - groups:
+      - system:masters
+      rolearn: arn:aws:iam::474864371982:role/UdacityFlaskDeployCBKubectlRole
+      username: build
+  mapUsers: |
+    []
 kind: ConfigMap
 metadata:
   creationTimestamp: "2020-04-18T21:45:06Z"
